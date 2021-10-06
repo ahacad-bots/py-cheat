@@ -13,6 +13,14 @@ norm = matplotlib.colors.Normalize(vmin=min(dataGoals.G), vmax=max(dataGoals.G))
 colors = [matplotlib.cm.Blues(norm(value)) for value in dataGoals.G]
 ```
 
+### save fig
+
+- 防止文字导出时被砍掉一部分
+
+```
+plt.savefig('testfig.png',dpi=300, bbox_inches = "tight")
+```
+
 ### Fonts
 - Seaborn 设置字体:
 ```python
