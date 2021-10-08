@@ -17,8 +17,17 @@ colors = [matplotlib.cm.Blues(norm(value)) for value in dataGoals.G]
 
 - 防止文字导出时被砍掉一部分
 
-```
+```python
 plt.savefig('testfig.png',dpi=300, bbox_inches = "tight")
+```
+
+### remove frames
+
+```python
+mpl.rcParams['axes.spines.left'] = False
+mpl.rcParams['axes.spines.right'] = False
+mpl.rcParams['axes.spines.top'] = False
+mpl.rcParams['axes.spines.bottom'] = False
 ```
 
 ### Fonts
