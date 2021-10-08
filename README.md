@@ -55,3 +55,13 @@ mpl.font_manager.fontManager.ttflist.insert(0, fe) # or append is fine
 mpl.rcParams['font.family'] = fe.name # = 'your custom ttf font name'
 mpl.rcParams.update({"font.size": 10})
 ```
+
+## Pandas
+
+### show more columns and rows in Pandas DataFrame
+
+```python
+pd.set_option('display.max_rows', 500)
+pd.set_option('display.max_columns', 500)
+pd.set_option('display.width', 1000)
+```
